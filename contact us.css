@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styles for header section starts here*/
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(204, 147, 190, 0.7), rgba(4,9,30,0.7)), url(images/backgroundflower.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: baseline; /* Vertically center the items */
+    justify-content: center; /* Space between logo and nav-links */
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.logo {
+    width: 50px; /* Set the logo width to 50px */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center; /* Center the navigation links vertically */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between boxes */
+    background-color: rgba(255, 255, 255, 0.1); /* Background color of each box */
+    padding: 10px 20px; /* Padding inside each box */
+    border-radius: 5px; /* Rounded corners for each box */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Adjust text color as needed */
+}
+.fa.fa-times {
+    display: none;
+}
+.fa.fa-bars {
+    display: none;
+}
+/* Styles for contact-us content starts here*/
+.contact-us .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start; /* Align items to the start */
+}
+
+.contact-us .row form {
+    flex: 1 1 60%; /* Adjusted form width */
+    padding: 2rem 2.5rem;
+    box-shadow: 0.5rem 1.5rem rgba(254, 255, 173, 0.7);
+    border: 0.1rem solid rgba(4, 9, 30, 0.7);
+    background: rgba(243, 203, 233, 0.979);
+    border-radius: 0.5rem;
+}
+
+.contact-us .row .image {
+    flex: 1 1 30%; /* Adjusted image width */
+    text-align: center;
+    padding-top: 6rem;
+    overflow: hidden;
+}
+
+.contact-us .row .image img {
+    width: 100%;
+    height: auto;
+    max-width: 60%; /* Ensure image fits its container */
+    border-radius: 0.5rem;
+}
+
+.contact-us .row form .box {
+    padding: 1rem;
+    font-size: 1rem; /* Adjust font size */
+    color: rgb(235, 172, 243);
+    text-transform: none;
+    border-radius: 0.5rem;
+    margin: 0.7rem 0;
+    width: 100%; /* Full width of the form */
+}
+
+.contact-us .row form .box:focus {
+    border-color: var(--pink);
+}
+
+.contact-us .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+.contact-us h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(184, 121, 169, 0.7), rgba(4,9,30,0.7)), url(images/backgroundflower.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgba(201, 122, 155, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text-box {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #db217e;
+    background: #db217e;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.about p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col {
+    flex-basis: calc(33.33% - 20px); /* Adjust width to create gap */
+    background: #d9a9e6d0;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+
+}
+.about-col:hover{
+    box-shadow: 0 0 20px 0px #f8f684d3;
+}
+
+@media (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}

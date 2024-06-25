@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Task</title>
+    <link rel="stylesheet" href="schedule.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <!--Navigation links and menu icons -->
+            <a href="schedule.html" class="logo-container"><img src="images/IR-removebg-preview.png" alt="Logo" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="schedule.html">SCHEDULE</a></li>
+                    <li><a href="favorite.html">FAVORITE</a></li>
+                    <li><a href="contact us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section> 
+    <!--Schedule content starts here-->
+    <section class="schedule">
+        <h1>TIMETABLE</h1>
+        <br>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Subject</th>
+                <th>Course Code</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>10:00-11:30</td>
+                <td>20th Century British Literature</td>
+                <td>ENGL 3140</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>3:30-4:50</td>
+                <td>Malaysian Government and Politics</td>
+                <td>PSCI 2301</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>10:00-11:30</td>
+                <td>Web Technologies</td>
+                <td>INFO 2302</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2:00-3:30</td>
+                <td>Principles and Practice of Management</td>
+                <td>MGMT 1301</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>3:30-4:50</td>
+                <td>Knowledge of Meaning</td>
+                <td>ENGL 3320</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>8:00-9:00</td>
+                <td>Usrah in Action</td>
+                <td>SCSH 2163</td>
+            </tr>
+            <tr>
+                <td>Wednesay</td>
+                <td>10:00-11:30</td>
+                <td>20th Century British Literature</td>
+                <td>ENGL 3140</td>     
+            </tr>
+            <tr>
+                <td></td>
+                <td>3:30-4:50</td>
+                <td>Malaysian Government and Politics</td>
+                <td>PSCI 2301</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>10:00-11:30</td>
+                <td>Web Technologies</td>
+                <td>INFO 2302</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2:00-3:30</td>
+                <td>Principles and Practice of Management</td>
+                <td>MGMT 1301</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>3:30-4:50</td>
+                <td>Knowledge of Meaning</td>
+                <td>ENGL 3320</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

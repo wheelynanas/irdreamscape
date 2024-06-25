@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+/* Styles for header section starts here*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/Background.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+nav .fa {
+    display: none;
+}
+/* Styles for schedule content starts here*/
+.schedule {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.7;
+    width: 80%; 
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+.schedule h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333; /* Ensure the text is visible against the background */
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.schedule table, .schedule th, .schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.schedule th {
+    background-color: rgb(230, 46, 184);
+    color: white;
+}
+
+.schedule tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule tr:hover {
+    background-color: #ddd;
+}
+
+.schedule td {
+    text-align: center;
+}
